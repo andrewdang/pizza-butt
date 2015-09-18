@@ -8,7 +8,6 @@ Pizza.prototype.addTopping = function(topping) {
   this.toppings.push(topping);
 };
 
-
 Pizza.prototype.cost = function() {
   var pizzaCost = 0.00;
   var pizzaSize = 0.00;
@@ -30,7 +29,6 @@ Pizza.prototype.cost = function() {
   return pizzaCost = this.quantity * (pizzaSize + (toppingsQty * 0.75));
 };
 
-
 var Order = function(name, pizzas) {
   this.name = name;
   this.pizzas = [];
@@ -43,3 +41,15 @@ Order.prototype.totalCost = function() {
   });
   return total;
 };
+
+
+
+
+
+
+$(document).ready(function() {
+  $("form#new-order").submit(function(event) {
+    event.preventDefault();
+
+  });
+});
