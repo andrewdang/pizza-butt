@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizza Butt</title>
+
+  <!-- CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- jQuery/JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container start-wiggle start-animation">
+    <div class="row">
+      <div class="col-xs-12">
+      <img src="img/logo.png" alt="logo" class="center-block"  height="200" width="200">
+    </div>
+  </div>
+
+    <div class="row">
+
+      <!-- CREATE PIZZA -->
+      <div class="col-xs-6 create-pizza-col">
+
+        <h3>CREATE PIZZA</h3>
+        <form id="order" class="uk-form">
+          <div class="radioGroupBelow">
+            <h6 for="size" class="pizza-part">Select Size:</h6>
+
+            <label for="medium">
+              <div class="medium animated wiggle">12"</div>
+              <p>$8.99</p>
+              <input type="radio" name="size" id="medium">
+            </label>
+
+            <label for="large">
+              <div class="large animated wiggle">14"</div>
+              <p>$12.99</p>
+              <input type="radio" name="size" id="large">
+            </label>
+
+            <label for="x-large">
+              <div class="x-large animated wiggle">16"</div>
+              <p>$14.99</p>
+              <input type="radio" name="size" id="x-large">
+            </label>
+
+            <label for="xx-large">
+              <div class="xx-large animated wiggle">18"</div>
+              <p>$16.99</p>
+              <input type="radio" name="size" id="xx-large">
+            </label>
+          </div>
+
+
+          <!-- select crust -->
+          <p class="pizza-part">Select Crust</p>
+            <label class="radio-inline"><input type="radio" name="crust">Thin Crust</label>
+            <label class="radio-inline"><input type="radio" name="crust">Stuffed Butt</label>
+            <label class="radio-inline"><input type="radio" name="crust">Deep Dish</label>
+
+
+          <!-- meat toppings -->
+          <p class="pizza-part">Meat Toppings (+$1.00)</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="checkbox">
+                <label class="checkbox"><input type="checkbox">Pepperoni</label>
+                <label class="checkbox"><input type="checkbox">Sausage</input></label>
+              </div>
+            </div>
+            <div class="checkbox">
+              <div class="col-sm-4">
+                <label class="checkbox"><input type="checkbox">Salami</input></label>
+                <label class="checkbox"><input type="checkbox">Chicken</input></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="checkbox">
+                <label class="checkbox"><input type="checkbox">Bacon</label>
+                <label class="checkbox"><input type="checkbox">Ham</input></label>
+              </div>
+            </div>
+            <div class="checkbox">
+              <div class="col-sm-4">
+                <label class="checkbox"><input type="checkbox">Anchovies</input></label>
+                <label class="checkbox"><input type="checkbox">Vegan Meat</input></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- non-meat toppings -->
+          <p class="pizza-part">Other Toppings (+$0.50)</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="checkbox">
+                <label class="checkbox"><input type="checkbox">Olives</label>
+                <label class="checkbox"><input type="checkbox">Mushrooms</input></label>
+              </div>
+            </div>
+            <div class="checkbox">
+              <div class="col-sm-4">
+                <label class="checkbox"><input type="checkbox">Peppers</input></label>
+                <label class="checkbox"><input type="checkbox">Pineapple</input></label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="checkbox">
+                <label class="checkbox"><input type="checkbox">Onions</label>
+                <label class="checkbox"><input type="checkbox">Spinach</input></label>
+              </div>
+            </div>
+            <div class="checkbox">
+              <div class="col-sm-4">
+                <label class="checkbox"><input type="checkbox">Artichoke</input></label>
+                <label class="checkbox"><input type="checkbox">Tomatoes</input></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- quantities -->
+          <label for="size" class="pizza-part">Quantity: </label>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <button type="submit" class="btn btn-danger">Add</button>
+        </form>
+      </div>
+
+
+      <!-- YOUR ORDER -->
+      <div class="col-xs-6 your-order-col">
+        <h3>Your Order</h3>
+
+        <h4>Size</h4>
+        <h4>Crust</h4>
+        <h4>Toppings</h4>
+        <h4>Total:</h4>
+        <button type="submit" class="btn btn-danger">Submit Order</button>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+/******************** GENERAL *******************/
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.pizza-part {
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  font-size: 1.1em;
+}
+
+
+.btn,
+.medium,
+.large,
+.x-large,
+.xx-large {
+  background-color: #df413e;
+}
+
+.col-xs-6 {
+  height: 710px;
+  border: 6px solid #e1ccb1;
+  border-bottom-right-radius: 225px;
+  border-bottom-left-radius: 225px;
+}
+
+.col-xs-12,
+.col-xs-6 {
+  background-color: #e1ccb1;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.2em;
+  font-size: 1.3em;
+}
+
+.btn:hover {
+  color: #000;
+  transition-duration: 0.3s;
+}
+
+.create-pizza-col {
+  border-bottom-right-radius: 180px;
+}
+
+.create-pizza-col,
+.your-order-col {
+  padding: 0 7%;
+}
+
+.your-order-col {
+  border-bottom-left-radius: 180px;
+}
+
+.checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/*********************** pizza sizes **************************/
+.medium,
+.large,
+.x-large,
+.xx-large {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0 10px;
+}
+
+.medium {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+
+.large {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+}
+
+.x-large {
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+}
+
+.xx-large {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+}
+
+.animated:hover,
+.start-animation {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes wiggle {
+    0% { -webkit-transform: skewX(9deg); }
+    10% { -webkit-transform: skewX(-8deg); }
+    20% { -webkit-transform: skewX(7deg); }
+    30% { -webkit-transform: skewX(-6deg); }
+    40% { -webkit-transform: skewX(5deg); }
+    50% { -webkit-transform: skewX(-4deg); }
+    60% { -webkit-transform: skewX(3deg); }
+    70% { -webkit-transform: skewX(-2deg); }
+    80% { -webkit-transform: skewX(1deg); }
+    90% { -webkit-transform: skewX(0deg); }
+    100% { -webkit-transform: skewX(0deg); }
+}
+@keyframes wiggle {
+    0% { transform: skewX(9deg); }
+    10% { transform: skewX(-8deg); }
+    20% { transform: skewX(7deg); }
+    30% { transform: skewX(-6deg); }
+    40% { transform: skewX(5deg); }
+    50% { transform: skewX(-4deg); }
+    60% { transform: skewX(3deg); }
+    70% { transform: skewX(-2deg); }
+    80% { transform: skewX(1deg); }
+    90% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+}
+.wiggle:hover,
+.start-wiggle {
+    -webkit-animation-name: wiggle;
+    animation-name: wiggle;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.animated.wiggle {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+}
+
+
+
+/************** align radio buttons pizza sizes *****************/
+.radioGroupBelow label {
+  display: inline-block;
+}
+.radioGroupBelow label input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+.radioGroupBelow p {
+  text-align: center;
+  margin-top: 1em;
+}
+
+
+
+​
