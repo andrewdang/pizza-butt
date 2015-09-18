@@ -32,7 +32,7 @@ describe("Order", function() {
     newPizza2.addTopping("olives");
     newPizza2.addTopping("pepperoni");
 
-    var newOrder = new Order("Andrew", []);
+    var newOrder = new Order([]);
     newOrder.pizzas.push(newPizza);
     newOrder.pizzas.push(newPizza2);
 
@@ -48,7 +48,7 @@ describe("Order", function() {
     newPizza2.addTopping("olives");
     newPizza2.addTopping("pepperoni");
 
-    var newOrder = new Order("Andrew", []);
+    var newOrder = new Order([]);
     newOrder.pizzas.push(newPizza);
     newOrder.pizzas.push(newPizza2);
 

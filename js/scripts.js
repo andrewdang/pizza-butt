@@ -29,8 +29,7 @@ Pizza.prototype.cost = function() {
   return pizzaCost = this.quantity * (pizzaSize + (toppingsQty * 0.75));
 };
 
-var Order = function(name, pizzas) {
-  this.name = name;
+var Order = function(pizzas) {
   this.pizzas = [];
 };
 
@@ -48,8 +47,16 @@ Order.prototype.totalCost = function() {
 
 
 $(document).ready(function() {
+  var clearFields = function() {
+    $("input.sizes").val("");
+    $("input.crusts").val("");
+    $("input.toppings").val("");
+  };
+
+
   $("form#new-order").submit(function(event) {
     event.preventDefault();
+
 
   });
 });

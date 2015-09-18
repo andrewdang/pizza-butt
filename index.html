@@ -30,40 +30,40 @@
 
         <h3>CREATE PIZZA</h3>
         <form id="new-order">
+
+          <!-- select pizza size -->
           <div class="radioGroupBelow">
             <h6 for="size" class="pizza-part">Select Size:</h6>
-
             <label for="medium">
               <div class="medium animated wiggle">12"</div>
               <p>$8.99</p>
-              <input type="radio" name="size" id="medium">
+              <input type="radio" name="size" id="medium" class="sizes" value="12">
             </label>
 
             <label for="large">
               <div class="large animated wiggle">14"</div>
               <p>$12.99</p>
-              <input type="radio" name="size" id="large">
+              <input type="radio" name="size" id="large" class="sizes" value="14">
             </label>
 
             <label for="x-large">
               <div class="x-large animated wiggle">16"</div>
               <p>$14.99</p>
-              <input type="radio" name="size" id="x-large">
+              <input type="radio" name="size" id="x-large" class="sizes" value="16">
             </label>
 
             <label for="xx-large">
               <div class="xx-large animated wiggle">18"</div>
               <p>$16.99</p>
-              <input type="radio" name="size" id="xx-large">
+              <input type="radio" name="size" id="xx-large" class="sizes" value="18">
             </label>
           </div>
 
-
           <!-- select crust -->
           <p class="pizza-part">Select Crust</p>
-            <label class="radio-inline"><input type="radio" name="crust">Thin Crust</label>
-            <label class="radio-inline"><input type="radio" name="crust">Stuffed Butt</label>
-            <label class="radio-inline"><input type="radio" name="crust">Deep Dish</label>
+            <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Thin Crust">Thin Crust</label>
+            <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Stuffed Butt">Stuffed Butt</label>
+            <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Deep Dish">Deep Dish</label>
 
 
           <!-- meat toppings -->
@@ -71,14 +71,14 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox">Pepperoni</label>
-                <label class="checkbox"><input type="checkbox">Sausage</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Pepperoni">Pepperoni</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Sausage"></input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox">Salami</input></label>
-                <label class="checkbox"><input type="checkbox">Chicken</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Salami">Salami</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Chicken">Chicken</input></label>
               </div>
             </div>
           </div>
@@ -86,14 +86,14 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox">Bacon</label>
-                <label class="checkbox"><input type="checkbox">Ham</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Bacon">Bacon</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Ham">Ham</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox">Anchovies</input></label>
-                <label class="checkbox"><input type="checkbox">Vegan Meat</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Anchovies">Anchovies</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Vegan Meat">Vegan Meat</input></label>
               </div>
             </div>
           </div>
@@ -103,28 +103,28 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox">Olives</label>
-                <label class="checkbox"><input type="checkbox">Mushrooms</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Olives">Olives</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Mushrooms">Mushrooms</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox">Peppers</input></label>
-                <label class="checkbox"><input type="checkbox">Pineapple</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Peppers">Peppers</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Pineapple">Pineapple</input></label>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox">Onions</label>
-                <label class="checkbox"><input type="checkbox">Spinach</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Onions">Onions</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Spinach">Spinach</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox">Artichoke</input></label>
-                <label class="checkbox"><input type="checkbox">Tomatoes</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Artichoke">Artichoke</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" value="Tomatoes">Tomatoes</input></label>
               </div>
             </div>
           </div>
