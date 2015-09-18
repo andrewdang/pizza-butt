@@ -6,6 +6,10 @@ body {
   font-family: 'Roboto Slab', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .pizza-part {
   font-weight: bold;
   margin-top: 1.5em;
@@ -32,6 +36,10 @@ body {
 .col-xs-12,
 .col-xs-6 {
   background-color: #e1ccb1;
+}
+
+.order-details {
+  text-align: right;
 }
 
 h3 {
@@ -68,6 +76,11 @@ h3 {
 .checkbox {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.total-row h4 {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 

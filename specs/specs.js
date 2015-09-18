@@ -16,7 +16,7 @@ describe("Pizza", function() {
     var newPizza = new Pizza(12, [], 1);
     newPizza.addTopping("ham");
     newPizza.addTopping("pineapple");
-    expect(newPizza.cost()).to.equal(10.49);
+    expect(newPizza.cost()).to.equal(11);
   });
 });
 
@@ -33,8 +33,8 @@ describe("Order", function() {
     newPizza2.addTopping("pepperoni");
 
     var newOrder = new Order([]);
-    newOrder.pizzas.push(newPizza);
-    newOrder.pizzas.push(newPizza2);
+    newOrder.addPizza(newPizza);
+    newOrder.addPizza(newPizza2);
 
     expect(newOrder.pizzas).to.eql([newPizza, newPizza2]);
   });
@@ -49,9 +49,9 @@ describe("Order", function() {
     newPizza2.addTopping("pepperoni");
 
     var newOrder = new Order([]);
-    newOrder.pizzas.push(newPizza);
-    newOrder.pizzas.push(newPizza2);
+    newOrder.addPizza(newPizza);
+    newOrder.addPizza(newPizza2);
 
-    expect(newOrder.totalCost()).to.eql(39.47);
+    expect(newOrder.totalCost()).to.eql(41);
   });
 });

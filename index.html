@@ -29,32 +29,32 @@
       <div class="col-xs-6 create-pizza-col">
 
         <h3>CREATE PIZZA</h3>
-        <form id="new-order">
+        <form id="new-pizza">
 
           <!-- select pizza size -->
           <div class="radioGroupBelow">
             <h6 for="size" class="pizza-part">Select Size:</h6>
             <label for="medium">
               <div class="medium animated wiggle">12"</div>
-              <p>$8.99</p>
+              <p>$9.00</p>
               <input type="radio" name="size" id="medium" class="sizes" value="12">
             </label>
 
             <label for="large">
               <div class="large animated wiggle">14"</div>
-              <p>$12.99</p>
+              <p>$13.00</p>
               <input type="radio" name="size" id="large" class="sizes" value="14">
             </label>
 
             <label for="x-large">
               <div class="x-large animated wiggle">16"</div>
-              <p>$14.99</p>
+              <p>$15.00</p>
               <input type="radio" name="size" id="x-large" class="sizes" value="16">
             </label>
 
             <label for="xx-large">
               <div class="xx-large animated wiggle">18"</div>
-              <p>$16.99</p>
+              <p>$17.00</p>
               <input type="radio" name="size" id="xx-large" class="sizes" value="18">
             </label>
           </div>
@@ -67,18 +67,18 @@
 
 
           <!-- meat toppings -->
-          <p class="pizza-part">Meat Toppings (+$0.75)</p>
+          <p class="pizza-part">Meat Toppings (+$1.00)</p>
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Pepperoni">Pepperoni</label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Sausage"></input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Pepperoni">Pepperoni</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Sausage">Sausage</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Salami">Salami</input></label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Chicken">Chicken</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Salami">Salami</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Chicken">Chicken</input></label>
               </div>
             </div>
           </div>
@@ -86,56 +86,62 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Bacon">Bacon</label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Ham">Ham</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Bacon">Bacon</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Ham">Ham</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Anchovies">Anchovies</input></label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Vegan Meat">Vegan Meat</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Anchovies">Anchovies</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Vegan Meat">Vegan Meat</input></label>
               </div>
             </div>
           </div>
 
           <!-- non-meat toppings -->
-          <p class="pizza-part">Other Toppings (+$0.75)</p>
+          <p class="pizza-part">Other Toppings (+$1.00)</p>
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Olives">Olives</label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Mushrooms">Mushrooms</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Olives">Olives</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Mushrooms">Mushrooms</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Peppers">Peppers</input></label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Pineapple">Pineapple</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Peppers">Peppers</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Pineapple">Pineapple</input></label>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4">
               <div class="checkbox">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Onions">Onions</label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Spinach">Spinach</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Onions">Onions</label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Spinach">Spinach</input></label>
               </div>
             </div>
             <div class="checkbox">
               <div class="col-sm-4">
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Artichoke">Artichoke</input></label>
-                <label class="checkbox"><input type="checkbox" class="toppings" value="Tomatoes">Tomatoes</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Artichoke">Artichoke</input></label>
+                <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Tomatoes">Tomatoes</input></label>
               </div>
             </div>
           </div>
 
           <!-- quantities -->
           <label for="size" class="pizza-part">Quantity: </label>
-          <select>
+          <select id="size">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
           </select>
 
           <button type="submit" class="btn btn-danger">Add</button>
@@ -145,19 +151,41 @@
 
       <!-- YOUR ORDER -->
       <div class="col-xs-6 your-order-col">
-        <h3>Your Order</h3>
+        <h3>YOUR ORDER</h3>
 
-        <h4>Size</h4>
-        <h4>Crust</h4>
-        <h4>Toppings</h4>
-        <h4>Total:</h4>
-        <button type="submit" class="btn btn-danger">Submit Order</button>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="pizzaOrder">
+            <h4>Quantity</h4>
+            <h4>Size</h4>
+            <h4>Crust</h4>
+            <h4>Toppings</h4>
+          </div>
+        </div>
+
+        <div class="col-md-6 order-details">
+          <div id="pizzaOrder">
+            <h4><span id="show-quantity"></span></h4>
+            <h4><span id="show-size"></span></h4>
+            <h4><span id="show-crust"></span></h4>
+            <h4>
+              <ul id="show-toppings">
+
+              </ul>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row total-row">
+        <div class="col-sm-6">
+          <h4>TOTAL:</h4>
+        </div>
+        <div class="col-sm-6 order-details">
+          <h4><span id="show-cost"></span></h4>
+        </div>
       </div>
     </div>
-
-
-
-
 
 </div>
 </body>
