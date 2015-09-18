@@ -28,5 +28,10 @@ Pizza.prototype.cost = function() {
 
   // calculate final cost
   return pizzaCost = this.quantity * (pizzaSize + (toppingsQty * 0.75));
+};
 
+
+var Order = function(name, pizzas) {
+  this.name = name;
+  this.pizzas = [];
 };
