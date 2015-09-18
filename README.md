@@ -4,7 +4,8 @@
 
 ##Description
 
-Create and order your favorite pizzas from your favorite pizza chain, Pizza Butt &reg;.
+Create and order pizzas from your favorite pizza chain, Pizza Butt &reg;. Visit [Pizza Butt](https://pizzabutt.bitballoon.com) to order.
+
 
 ##Setup
 
