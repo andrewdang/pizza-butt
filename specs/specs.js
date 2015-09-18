@@ -20,6 +20,8 @@ describe("Pizza", function() {
   });
 });
 
+
+
 describe("Order", function() {
   it('creates a new order', function() {
     var newPizza = new Pizza(12, [], 1);
@@ -35,5 +37,21 @@ describe("Order", function() {
     newOrder.pizzas.push(newPizza2);
 
     expect(newOrder.pizzas).to.eql([newPizza, newPizza2]);
+  });
+
+  it('calculates the total order cost', function() {
+    var newPizza = new Pizza(12, [], 1);
+    newPizza.addTopping("ham");
+    newPizza.addTopping("pineapple");
+
+    var newPizza2 = new Pizza(14, [], 2);
+    newPizza2.addTopping("olives");
+    newPizza2.addTopping("pepperoni");
+
+    var newOrder = new Order("Andrew", []);
+    newOrder.pizzas.push(newPizza);
+    newOrder.pizzas.push(newPizza2);
+
+    expect(newOrder.totalCost()).to.eql(39.47);
   });
 });

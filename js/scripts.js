@@ -35,3 +35,11 @@ var Order = function(name, pizzas) {
   this.name = name;
   this.pizzas = [];
 };
+
+Order.prototype.totalCost = function() {
+  var total = 0;
+  this.pizzas.forEach(function(pizza) {
+    total += pizza.cost();
+  });
+  return total;
+};
