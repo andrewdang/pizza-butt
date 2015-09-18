@@ -4,7 +4,7 @@
 
 ##Description
 
-Create and order your favorite pizzas from Pizza Butt &reg;.
+Create and order your favorite pizzas from your favorite pizza chain, Pizza Butt &reg;.
 
 ##Setup
 

@@ -54,8 +54,6 @@ $(document).ready(function() {
   //   $("input.crusts").val("");
   //   $("input.toppings").val("");
   // };
-
-
   $("form#new-pizza").submit(function(event) {
     event.preventDefault();
 
