@@ -11,4 +11,11 @@ describe("pizza", function() {
     newPizza.addTopping("ham");
     expect(newPizza.toppings).to.eql(["ham"]);
   });
+
+  it('calculates the cost of the pizza', function() {
+    var newPizza = new Pizza(12, [], 1);
+    newPizza.addTopping("ham");
+    newPizza.addTopping("pineapple");
+    expect(newPizza.cost()).to.equal(10.49);
+  });
 });
