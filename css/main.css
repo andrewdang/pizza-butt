@@ -53,7 +53,8 @@ h3 {
   margin-top: 1.2em;
 }
 
-.btn:hover {
+.btn:hover,
+.panel-heading a:hover {
   transition-duration: .3s;
   color: #000;
 }
@@ -85,11 +86,14 @@ h3 {
   font-weight: bold;
 }
 
-.order-labels h4 {
-  font-weight: bold;
-}
 
 /* accordian panel */
+.order-labels h4,
+.panel-heading a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .panel-heading {
   background-color: #df413e !important;
   color: #fff !important;
