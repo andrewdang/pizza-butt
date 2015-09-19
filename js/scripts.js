@@ -49,11 +49,11 @@ Pizza.prototype.cost = function(size, numToppings, quantity) {
 
 // jQuery
 $(document).ready(function() {
-  // var clearFields = function() {
-  //   $("input.sizes").val("");
-  //   $("input.crusts").val("");
-  //   $("input.toppings").val("");
-  // };
+  var clearForm = function() {
+    $('input:checkbox').removeAttr('checked');
+    $('input:radio').removeAttr('checked');
+  };
+
   $("form#new-pizza").submit(function(event) {
     event.preventDefault();
 
@@ -72,7 +72,7 @@ $(document).ready(function() {
     cost = cost.toFixed(2);
 
 
-    // show order
+    // show order & clear form
     $("span#show-quantity").text(pizzaQty);
     $("span#show-size").text(pizzaSize + '"');
     $("span#show-crust").text(pizzaCrust);
@@ -80,5 +80,6 @@ $(document).ready(function() {
       $("ul#show-toppings").append("<li>" + pizzaToppings[topping] + "</li>");
     });
     $("span#show-cost").text("$" + cost);
+    clearForm();
   });
 });
