@@ -89,6 +89,7 @@ h3 {
   font-weight: bold;
 }
 
+/* accordian panel */
 .panel-heading {
   background-color: #df413e !important;
   color: #fff !important;
@@ -98,8 +99,8 @@ h3 {
   text-align: right;
 }
 
-#pizza-order h4 {
-  font-weight: normal;
+.panel-group {
+  margin-top: 5%;
 }
 
 /*********************** pizza sizes **************************/
