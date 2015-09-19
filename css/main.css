@@ -224,7 +224,7 @@ h3 {
   .radio-inline,
   .radioGroupBelow p,
   .radioGroupBelow label {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .col-xs-6 {
@@ -238,6 +238,32 @@ h3 {
   .radioGroupBelow label,
   .radioGroupBelow p {
     margin: 4px 0 0 0;
+  }
+
+  /* pizza sizes*/
+  .medium {
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .large {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .x-large {
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .xx-large {
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
   }
 }
 
