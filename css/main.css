@@ -52,6 +52,7 @@ h3 {
   margin: 0 auto;
   margin-top: 1.2em;
   font-size: 1.3em;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -65,7 +66,11 @@ h3 {
 
 .create-pizza-col,
 .your-order-col {
-  padding: 0 7%;
+  padding: 0 5%;
+}
+
+.x-large {
+  display: block;
 }
 
 .your-order-col {
@@ -125,10 +130,16 @@ h3 {
   line-height: 80px;
 }
 
-.animated:hover,
-.start-animation {
+.animated:hover {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.butt-animation:hover {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -160,7 +171,7 @@ h3 {
     100% { transform: skewX(0deg); }
 }
 .wiggle:hover,
-.start-wiggle {
+.butt-wiggle:hover {
     -webkit-animation-name: wiggle;
     animation-name: wiggle;
     -webkit-animation-timing-function: ease-in;
@@ -169,6 +180,11 @@ h3 {
 .animated.wiggle {
     -webkit-animation-duration: 0.75s;
     animation-duration: 0.75s;
+}
+
+.butt-animation.butt-wiggle {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
 }
 
 
@@ -189,20 +205,59 @@ h3 {
 
 /******************** MEDIA QUERIES **********************/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1365px) {
+  h3, h4 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .pizza-part {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
   .col-xs-6 {
-    height: 900px;
+    height: 600px;
+  }
+
+  .radioGroupBelow p {
+    font-size: 14px;
+  }
+
+  .checkbox,
+  .radio-inline {
+    font-size: 12px;
+  }
+
+  .radioGroupBelow label,
+  .radioGroupBelow p {
+    margin: 4px 0 0 0;
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   .col-xs-6 {
-    height: 1100px;
+    height: 620px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .col-xs-6 {
+    height: 750px;
   }
 }
 
 @media screen and (max-width: 581px) {
   .col-xs-6 {
-    height: 1500px;
+    height: 1000px;
   }
 }

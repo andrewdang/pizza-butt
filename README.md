@@ -24,7 +24,7 @@ Create and order pizzas from your favorite pizza chain, Pizza Butt &reg;. Visit 
 
 Copyright (c) 2015  Andrew Dang
 
-This software is licensed under the MIT license and not affiliated with Pizza Hut.
+This software is licensed under the MIT license and protected under parody law.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
