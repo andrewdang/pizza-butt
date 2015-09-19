@@ -89,6 +89,19 @@ h3 {
   font-weight: bold;
 }
 
+.panel-heading {
+  background-color: #df413e !important;
+  color: #fff !important;
+}
+
+.col-xs-10 {
+  text-align: right;
+}
+
+#pizza-order h4 {
+  font-weight: normal;
+}
+
 /*********************** pizza sizes **************************/
 
 .medium,
