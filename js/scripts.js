@@ -81,6 +81,10 @@ $(document).ready(function() {
     });
     $("span#show-cost").text("$" + cost);
     $(".container").addClass("butt-animation butt-wiggle");
+    $(".collapseOne").addClass("in");
+    $('.panel-collapse:not(".in")')
+    .collapse('show');
+
     clearForm();
   });
 });
