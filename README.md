@@ -11,7 +11,7 @@ Create and order pizzas from your favorite pizza chain, Pizza Butt &reg;. Visit 
 
 * Run `git clone https://github.com/andrewdang17/pizza-butt.git`
 * Open the index.html file in your favorite browser
-* Or just visit [pizzabutt.bitballoon.com](pizzabutt.bitballoon.com)
+* Or just visit [Pizza Butt](https://pizzabutt.bitballoon.com)
 
 ## Tech Used
 
