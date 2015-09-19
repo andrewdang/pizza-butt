@@ -80,6 +80,7 @@ $(document).ready(function() {
       $("ul#show-toppings").append("<li>" + pizzaToppings[topping] + "</li>");
     });
     $("span#show-cost").text("$" + cost);
+    $(".container").addClass("butt-animation butt-wiggle");
     clearForm();
   });
 });
