@@ -82,8 +82,14 @@ $(document).ready(function() {
     $("span#show-cost").text("$" + cost);
     $(".container").addClass("butt-animation butt-wiggle");
     $(".collapseOne").addClass("in");
-    $('.panel-collapse:not(".in")')
-    .collapse('show');
+    $('.panel-collapse:not(".in")').collapse('show');
+    $(".create").hide();
+
+    // create new order button that refreshes page
+    $(".new-order-clear").show();
+    $(".new-order-clear").click(function() {
+      location.reload(true);
+    });
 
     clearForm();
   });

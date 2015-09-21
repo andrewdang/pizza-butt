@@ -18,6 +18,11 @@ h3,
 }
 
 .btn,
+.panel-heading {
+  border-radius: 0;
+}
+
+.btn,
 .medium,
 .large,
 .x-large,
@@ -42,15 +47,24 @@ h3,
 .pizza-part {
   font-size: 1.1em;
   margin-top: 1.6em;
-  margin-bottom: 0.2em;
 }
 
-.other-toppings {
-  margin-top: .2em;
+.other-toppings,
+.pizza-part {
+  margin-top: 0.2em;
 }
 
 h3 {
   margin-bottom: 15px;
+}
+
+h3,
+.large,
+.medium,
+.x-large,
+.xx-large,
+.panel-heading,
+.radioGroupBelow p {
   text-align: center;
 }
 
@@ -68,15 +82,12 @@ h3 {
   color: #000;
 }
 
-
-
 .checkbox {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* butt background */
-
 .col-xs-6 {
   height: 710px;
   border-bottom-right-radius: 260px;
@@ -103,7 +114,11 @@ td:first-child {
 .panel-heading {
   background-color: #df413e !important;
   color: #fff !important;
-  text-align: center;
+  padding: 10px;
+}
+
+.panel-group {
+  margin-top: 5%;
 }
 
 .col-xs-10,
@@ -112,18 +127,20 @@ td:nth-child(2) {
   text-align: right;
 }
 
-.panel-group {
-  margin-top: 5%;
-}
-
 .table > tbody > tr > td {
   padding-top: 0;
   padding-bottom: 1em;
   border-top: 0;
 }
 
+.panel-body,
+.table > tbody > tr > .total-cost,
 .table > tbody > tr > td:first-child {
   padding-bottom: 0;
+}
+
+.new-order-clear {
+  display: none;
 }
 
 /*********************** pizza sizes **************************/
@@ -136,7 +153,6 @@ td:nth-child(2) {
   font-weight: bold;
   display: inline-block;
   margin: 0 10px;
-  text-align: center;
   color: #fff;
   border-radius: 50%;
 }
@@ -239,7 +255,6 @@ td:nth-child(2) {
 
 .radioGroupBelow p {
   margin-top: 1em;
-  text-align: center;
 }
 
 /******************** MEDIA QUERIES **********************/
