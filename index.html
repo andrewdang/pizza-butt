@@ -62,23 +62,25 @@
           </div>
 
           <!-- select crust -->
-          <p class="pizza-part">Select Crust</p>
-            <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Thin Crust">Thin Crust</label>
-            <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Stuffed Butt">Stuffed Butt</label>
-            <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Deep Dish">Deep Dish</label>
+          <div class="pizza-crusts">
+            <p class="pizza-part">Select Crust</p>
+              <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Thin Crust">Thin Crust</label>
+              <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Stuffed Butt">Stuffed Butt</label>
+              <label class="radio-inline"><input type="radio" name="crust" class="crusts" value="Deep Dish">Deep Dish</label>
+          </div>
 
 
           <!-- meat toppings -->
           <p class="pizza-part">Meat Toppings (+$1.00)</p>
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-sm-4">
               <div class="checkbox">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Pepperoni">Pepperoni</label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Sausage">Sausage</input></label>
               </div>
             </div>
             <div class="checkbox">
-              <div class="col-xs-4">
+              <div class="col-sm-4">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Salami">Salami</input></label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Chicken">Chicken</input></label>
               </div>
@@ -86,14 +88,14 @@
           </div>
 
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-sm-4">
               <div class="checkbox">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Bacon">Bacon</label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Ham">Ham</input></label>
               </div>
             </div>
             <div class="checkbox">
-              <div class="col-xs-4">
+              <div class="col-sm-4">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Anchovies">Anchovies</input></label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Vegan Meat">Vegan Meat</input></label>
               </div>
@@ -103,28 +105,28 @@
           <!-- non-meat toppings -->
           <p class="pizza-part">Other Toppings (+$1.00)</p>
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-sm-4">
               <div class="checkbox">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Olives">Olives</label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Mushrooms">Mushrooms</input></label>
               </div>
             </div>
             <div class="checkbox">
-              <div class="col-xs-4">
+              <div class="col-sm-4">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Peppers">Peppers</input></label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Pineapple">Pineapple</input></label>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-sm-4">
               <div class="checkbox">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Onions">Onions</label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Spinach">Spinach</input></label>
               </div>
             </div>
             <div class="checkbox">
-              <div class="col-xs-4">
+              <div class="col-sm-4">
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Artichoke">Artichoke</input></label>
                 <label class="checkbox"><input type="checkbox" class="toppings" name="toppings" value="Tomatoes">Tomatoes</input></label>
               </div>
@@ -172,7 +174,7 @@
               <div class="panel-body">
 
               <!-- New Order -->
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-xs-2 order-labels">
                     <h4>Quantity</h4>
                     <h4>Size</h4>
@@ -189,7 +191,36 @@
                       </h4>
                     </div>
                   </div>
-                </div>
+                </div> -->
+
+                <table class="table">
+                  <div id="pizzaOrder">
+                    <tr>
+                      <td>Quantity</td>
+                      <td><span id="show-quantity"></span></td>
+                    </tr>
+
+                    <tr>
+                      <td>Size</td>
+                      <td><span id="show-size"></span></td>
+                    </tr>
+
+                    <tr>
+                      <td>Crust</td>
+                      <td><span id="show-crust"></span></td>
+                    </tr>
+
+                    <tr>
+                      <td>Toppings</td>
+                      <td><ul id="show-toppings"></ul></td>
+                    </tr>
+
+                    <tr>
+                      <td>TOTAL:</td>
+                      <td><span id="show-cost"></span></td>
+                    </tr>
+                  </div>
+                </table>
 
               </div>
             </div>
@@ -211,14 +242,6 @@
           </div> -->
         </div>
 
-    <div class="row total-row">
-      <div class="col-sm-6">
-        <h4>TOTAL:</h4>
-      </div>
-      <div class="col-sm-6 order-details">
-        <h4><span id="show-cost"></span></h4>
-      </div>
-    </div>
 
   </div>
 </div>
