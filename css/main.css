@@ -7,17 +7,14 @@ body {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
-.container {
-  width: 80%;
-}
-
-.pizza-part {
-  font-size: 1.1em;
+h3,
+.btn,
+.pizza-part,
+.total-row h4 {
   font-weight: bold;
-  margin-top: 1.5em;
-  margin-bottom: 0.2em;
 }
 
 .btn,
@@ -28,27 +25,37 @@ ul {
   background-color: #df413e;
 }
 
-.col-xs-6 {
-  height: 710px;
-  border-bottom-right-radius: 225px;
-  border-bottom-left-radius: 225px;
-}
-
-.col-xs-12,
-.col-xs-6 {
+.col-xs-6,
+.col-xs-12 {
   background-color: #e1ccb1;
 }
 
+.container {
+  width: 80%;
+}
+
+.create-pizza-col,
+.your-order-col {
+  padding: 0 7%;
+}
+
+.pizza-part {
+  font-size: 1.1em;
+  margin-top: 1.6em;
+  margin-bottom: 0.2em;
+}
+
+.other-toppings {
+  margin-top: .2em;
+}
 
 h3 {
-  font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .btn {
   font-size: 1.3em;
-  font-weight: bold;
   display: block;
   margin: 0 auto;
   margin-top: 1.2em;
@@ -61,17 +68,10 @@ h3 {
   color: #000;
 }
 
-.create-pizza-col {
-  border-bottom-right-radius: 180px;
-}
-
-.your-order-col {
-  border-bottom-left-radius: 180px;
-}
-
-.create-pizza-col,
-.your-order-col {
-  padding: 0 7%;
+input[type=checkbox], input[type=radio] { /* vert align checkbox */
+  vertical-align: -2px;
+  margin: 0;
+  padding: 0;
 }
 
 .checkbox {
@@ -79,15 +79,20 @@ h3 {
   margin-bottom: 0;
 }
 
-.total-row h4 {
-  font-size: 1.5em;
-  font-weight: bold;
+/* butt background */
+
+.col-xs-6 {
+  height: 710px;
+  border-bottom-right-radius: 240px;
+  border-bottom-left-radius: 240px;
 }
 
-input[type=checkbox], input[type=radio] { /* vert align checkbox */
-    vertical-align: -2px;
-    margin: 0;
-    padding: 0;
+.create-pizza-col {
+  border-bottom-right-radius: 180px;
+}
+
+.your-order-col {
+  border-bottom-left-radius: 180px;
 }
 
 
@@ -113,6 +118,16 @@ td:nth-child(2) {
 
 .panel-group {
   margin-top: 5%;
+}
+
+.table > tbody > tr > td {
+  padding-top: 0;
+  padding-bottom: 1em;
+  border-top: 0;
+}
+
+.table > tbody > tr > td:first-child {
+  padding-bottom: 0;
 }
 
 /*********************** pizza sizes **************************/
@@ -154,7 +169,8 @@ td:nth-child(2) {
   height: 80px;
 }
 
-/* animation */
+/*********************** Animation **************************/
+
 .animated:hover {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -170,7 +186,7 @@ td:nth-child(2) {
 }
 
 @-webkit-keyframes wiggle {
-  0% { -webkit-transform: skewX(9deg);}
+  0%  { -webkit-transform: skewX(9deg);}
   10% { -webkit-transform: skewX(-8deg);}
   20% { -webkit-transform: skewX(7deg);}
   30% { -webkit-transform: skewX(-6deg);}
@@ -184,17 +200,17 @@ td:nth-child(2) {
 }
 
 @keyframes wiggle {
-  0% {-webkit-transform: skewX(9deg);transform: skewX(9deg);}
-  10% {-webkit-transform: skewX(-8deg);transform: skewX(-8deg);}
-  20% {-webkit-transform: skewX(7deg);transform: skewX(7deg);}
-  30% {-webkit-transform: skewX(-6deg);transform: skewX(-6deg);}
-  40% {-webkit-transform: skewX(5deg);transform: skewX(5deg);}
-  50% {-webkit-transform: skewX(-4deg);transform: skewX(-4deg);}
-  60% {-webkit-transform: skewX(3deg);transform: skewX(3deg);}
-  70% {-webkit-transform: skewX(-2deg);transform: skewX(-2deg);}
-  80% {-webkit-transform: skewX(1deg);transform: skewX(1deg);}
-  90% {-webkit-transform: skewX(0deg);transform: skewX(0deg);}
-  100% {-webkit-transform: skewX(0deg);transform: skewX(0deg);}
+  0%   {-webkit-transform: skewX(9deg);  transform: skewX(9deg);}
+  10%  {-webkit-transform: skewX(-8deg); transform: skewX(-8deg);}
+  20%  {-webkit-transform: skewX(7deg);  transform: skewX(7deg);}
+  30%  {-webkit-transform: skewX(-6deg); transform: skewX(-6deg);}
+  40%  {-webkit-transform: skewX(5deg);  transform: skewX(5deg);}
+  50%  {-webkit-transform: skewX(-4deg); transform: skewX(-4deg);}
+  60%  {-webkit-transform: skewX(3deg);  transform: skewX(3deg);}
+  70%  {-webkit-transform: skewX(-2deg); transform: skewX(-2deg);}
+  80%  {-webkit-transform: skewX(1deg);  transform: skewX(1deg);}
+  90%  {-webkit-transform: skewX(0deg);  transform: skewX(0deg);}
+  100% {-webkit-transform: skewX(0deg);  transform: skewX(0deg);}
 }
 
 .wiggle:hover, .butt-wiggle {
@@ -343,7 +359,6 @@ td:nth-child(2) {
 
 
 
-
 @media screen and (max-width: 760px) {
   .col-xs-6 {
     height: 800px;
@@ -362,10 +377,7 @@ td:nth-child(2) {
 
   td:nth-child(2) {
     text-align: left;
-  }
-
-  ul {
-    padding-left: 0;
+    font-size: 12px;
   }
 }
 
