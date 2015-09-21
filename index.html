@@ -34,7 +34,8 @@
 
           <!-- select pizza size -->
           <div class="radioGroupBelow">
-            <h6 for="size" class="pizza-part">Select Size:</h6>
+            <h6 for="size" class="pizza-part">Select Size & Quantity:</h6>
+
             <label for="medium">
               <div class="medium animated wiggle">12"</div>
               <p>$8.99</p>
@@ -131,19 +132,21 @@
           </div>
 
           <!-- quantities -->
-          <label for="quantity" class="pizza-part">Quantity: </label>
-          <select id="quantity" name="quantity">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
+          <div class="quantities">
+            <label for="quantity" class="pizza-part">Quantity: </label>
+            <select id="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
 
           <button type="submit" class="btn btn-danger">SUBMIT</button>
         </form>
@@ -154,82 +157,59 @@
     <div class="col-xs-6 your-order-col">
       <h3>YOUR ORDER</h3>
       <div class="row">
-        <!-- <div class="col-md-6">
-          <div class="order-labels">
-            <h4>Quantity</h4>
-            <h4>Size</h4>
-            <h4>Crust</h4>
-            <h4>Toppings</h4>
-          </div>
-        </div> -->
 
-        <!-- <div class="col-md-6 order-details">
-          <div id="pizzaOrder">
-            <h4><span id="show-quantity"></span></h4>
-            <h4><span id="show-size"></span></h4>
-            <h4><span id="show-crust"></span></h4>
-            <h4>
-              <ul id="show-toppings"></ul>
-            </h4>
-          </div>
-        </div>
-      </div> -->
-
-
-
-  <!-- Collapsable Pizza Orders -->
-
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          View Order
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-
-      <!-- New Order -->
-        <div class="row">
-          <div class="col-xs-2 order-labels">
-            <h4>Quantity</h4>
-            <h4>Size</h4>
-            <h4>Crust</h4>
-            <h4>Toppings</h4>
-          </div>
-          <div class="col-xs-10 order-details">
-            <div id="pizzaOrder">
-              <h4><span id="show-quantity"></span></h4>
-              <h4><span id="show-size"></span></h4>
-              <h4><span id="show-crust"></span></h4>
-              <h4>
-                <ul id="show-toppings"></ul>
+        <!-- Collapsable Pizza Orders -->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  View Order
+                </a>
               </h4>
             </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+
+              <!-- New Order -->
+                <div class="row">
+                  <div class="col-xs-2 order-labels">
+                    <h4>Quantity</h4>
+                    <h4>Size</h4>
+                    <h4>Crust</h4>
+                    <h4>Toppings</h4>
+                  </div>
+                  <div class="col-xs-10 order-details">
+                    <div id="pizzaOrder">
+                      <h4><span id="show-quantity"></span></h4>
+                      <h4><span id="show-size"></span></h4>
+                      <h4><span id="show-crust"></span></h4>
+                      <h4>
+                        <ul id="show-toppings"></ul>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
+
+          <!-- template -->
+          <!-- <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+
+              </div>
+            </div>
+          </div> -->
         </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- template -->
-  <!-- <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-
-      </div>
-    </div>
-  </div> -->
-</div>
 
     <div class="row total-row">
       <div class="col-sm-6">
