@@ -68,11 +68,7 @@ h3 {
   color: #000;
 }
 
-input[type=checkbox], input[type=radio] { /* vert align checkbox */
-  vertical-align: -2px;
-  margin: 0;
-  padding: 0;
-}
+
 
 .checkbox {
   margin-top: 0;
@@ -83,8 +79,8 @@ input[type=checkbox], input[type=radio] { /* vert align checkbox */
 
 .col-xs-6 {
   height: 710px;
-  border-bottom-right-radius: 240px;
-  border-bottom-left-radius: 240px;
+  border-bottom-right-radius: 260px;
+  border-bottom-left-radius: 260px;
 }
 
 .create-pizza-col {
@@ -287,6 +283,12 @@ td:nth-child(2) {
     margin: 4px 0 0 0;
   }
 
+  input[type=checkbox], input[type=radio] { /* vert align checkbox */
+    vertical-align: -2px;
+    margin: 0;
+    padding: 0;
+  }
+
   /* pizza sizes*/
   .medium {
     line-height: 30px;
@@ -359,7 +361,7 @@ td:nth-child(2) {
 
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
   .col-xs-6 {
     height: 800px;
   }
@@ -383,23 +385,54 @@ td:nth-child(2) {
 
 
 
-
 @media screen and (max-width: 581px) {
+  .container {
+    width: 100%;
+  }
+
   .col-xs-6 {
-    height: 800px;
+    height: 880px;
+  }
+
+  .btn,
+  .checkbox,
+  .pizza-part,
+  .quantities,
+  .radio-inline {
+    font-size: 14px;
+  }
+
+  input[type=checkbox], input[type=radio] { /* realign checkbox vertically */
+    margin: 4px 0 0;
   }
 
   /* pizza sizes */
+  .medium,
+  .large,
+  .x-large,
+  .xx-large {
+    margin-left: 4px;
+    font-weight: normal;
+  }
+
+  .medium {
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+  }
+
   .large {
-    line-height: 35px;
-    width: 35px;
-    height: 35px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+
   }
 
   .x-large {
     line-height: 40px;
     width: 40px;
     height: 40px;
+
   }
 
   .xx-large {
