@@ -44,7 +44,7 @@ h3,
   padding: 0 7%;
 }
 
-.pizza-part {
+/*.pizza-part {
   font-size: 1.1em;
   margin-top: 1.6em;
 }
@@ -52,6 +52,10 @@ h3,
 .other-toppings,
 .pizza-part {
   margin-top: 0.2em;
+}*/
+
+.pizza-part {
+  margin: 1.1em 0 0.2em 0;
 }
 
 h3 {
